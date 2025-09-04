@@ -1,0 +1,30 @@
+body{
+   background-color:#37353E ;
+}
+#a1 {
+    color: #715A5A;
+    animation-play-state: running;
+}
+.box {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  animation-name: rotate;
+  animation-duration: 0.02s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.box:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(100);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
